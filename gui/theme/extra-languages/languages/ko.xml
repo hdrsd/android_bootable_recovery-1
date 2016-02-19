@@ -13,8 +13,8 @@
 		<!-- Partition display names -->
 		<string name="system">시스템</string>
 		<string name="system_image">시스템 이미지</string>
-		<string name="vendor">벤더</string>
-		<string name="vendor_image">벤더 이미지</string>
+		<string name="vendor">제조사</string>
+		<string name="vendor_image">제조사 이미지</string>
 		<string name="boot">커널</string>
 		<string name="recovery">리커버리</string>
 		<string name="cache">캐시</string>
@@ -23,7 +23,7 @@
 		<string name="internal">내부 저장소</string>
 		<string name="microsd">외부 저장소</string>
 		<string name="usbotg">USB OTG</string>
-		<string name="android_secure">안드로이드 보안</string>
+		<string name="android_secure">android_secure</string>
 		<string name="dalvik">달빅 / ART 캐시</string>
 		<!-- This is a rarely used partition on a Micro SD card for a very old app2sd system -->
 		<string name="sdext">SD-EXT</string>
@@ -250,7 +250,7 @@
 		<string name="rename_backup_complete">백업 이름 변경 완료</string>
 		<string name="swipe_to_rename">밀어서 이름 변경</string>
 		<string name="swipe_rename">   이름 변경</string>
-		<string name="confirm_hdr">Confirm</string>
+		<string name="confirm_hdr">확인</string>
 		<string name="mount_hdr">마운트</string>
 		<string name="mount_sel_part">마운트할 파티션 선택:</string>
 		<string name="mount_sys_ro_chk">읽기 전용으로 시스템 파티션 마운트</string>
@@ -263,7 +263,7 @@
 		<string name="usb_stor_mnt1">USB 저장소가 마운트됨</string>
 		<string name="usb_stor_mnt2">기기를 안전하게 분리하도록</string>
 		<string name="usb_stor_mnt3">분리 시 주의하십시오!</string>
-		<string name="unmount_btn">언마운트</string>
+		<string name="unmount_btn">마운트 해제</string>
 		<string name="rb_system_btn">시스템</string>
 		<string name="rb_poweroff_btn">전원 종료</string>
 		<string name="rb_recovery_btn">복구 모드</string>
@@ -277,8 +277,10 @@
 		<!--공식 소프트웨어 업데이트를 적용하기 쉽도록 TWRP에서 system 파티션을 편집 하지 않도록 할 수 있습니다.-->
 		<string name="sys_rop1">TWRP can leave your system partition unmodified</string>
 		<string name="sys_rop2">to make it easier for you to take official updates.</string>
+		<!--TWRP는 공식 소프트웨어에서 TWRP를 제거하려는 시도를 방지할 수 없으며, 이는 당신의 기기에 루트권한을 부여하지 못할 수 있습니다.-->
 		<string name="sys_rop3">TWRP will be unable to prevent the stock ROM from</string>
 		<string name="sys_rop4">replacing TWRP and will not offer to root your device.</string>
+		<!--zip파일들을 설치하거나 adb 명령어 작업은 당신의 시스템 파티션에 대해 변경이 가능할 것 입니다.-->
 		<string name="sys_rop5">Installing zips or performing adb operations may still</string>
 		<string name="sys_rop6">modify the system partition.</string>
 		<string name="sys_rol1">TWRP can leave your system partition unmodified to make it easier for you to take official updates.</string>
@@ -294,9 +296,9 @@
 		<string name="settings_gen_btn">기본</string>
 		<string name="use_rmrf_chk">초기화 대신 rm -rf를 사용합니다.</string>
 		<string name="use24clock_chk">24시간 형식 사용</string>
-		<string name="rev_navbar_chk">네비게이션바 레이아웃 뒤집기</string>
-		<string name="simact_chk">Simulate actions for theme testing</string>
-		<string name="simfail_chk">Simulate failure for actions</string>
+		<string name="rev_navbar_chk">네비게이션바 레이아웃 반전</string>
+		<string name="simact_chk">테마 테스트를 위해 가상동작모드 활성화</string>
+		<string name="simfail_chk">기능 시뮬레이션 실패</string>
 		<string name="ctr_navbar_rdo">가운데 네비게이션바 버튼</string>
 		<string name="lft_navbar_rdo">왼쪽 네비게이션바 버튼</string>
 		<string name="rht_navbar_rdo">오른쪽 네비게이션바 버튼</string>
@@ -334,7 +336,7 @@
 		<string name="utcp10">(UTC +10) 동 오스트레일리아, 괌</string>
 		<string name="utcp11">(UTC +11) 블라디보스토크, 솔로몬 제도</string>
 		<string name="utcp12">(UTC +12) 오클랜드, 웰링턴, 피지</string>
-		<string name="sel_tz_offset">Select Offset (usually 0): %tw_time_zone_guioffset%</string>
+		<string name="sel_tz_offset">오프셋 선택 (초기설정 0): %tw_time_zone_guioffset%</string>
 		<string name="tz_offset_none">없음</string>
 		<string name="tz_offset_0">0</string>
 		<string name="tz_offset_15">15</string>
@@ -355,10 +357,10 @@
 		<string name="vibration_hdr">진동</string>
 		<string name="button_vibration_hdr">버튼 진동</string>
 		<string name="kb_vibration_hdr">키보드 진동</string>
-		<string name="act_vibration_hdr">Action Vibration</string>
+		<string name="act_vibration_hdr">작업 완료알림 진동</string>
 		<string name="button_vibration">버튼 진동:</string>
 		<string name="kb_vibration">키보드 진동:</string>
-		<string name="act_vibration">Action Vibration:</string>
+		<string name="act_vibration">작업 완료알림 진동:</string>
 		<string name="select_language">언어 선택:</string>
 		<string name="sel_lang_btn">언어 선택</string>
 		<string name="set_language_btn">언어 적용</string>
@@ -378,7 +380,7 @@
 		<string name="inject_twrp_confirm">Re-Inject TWRP?</string>
 		<string name="injecting_twrp">Re-Injecting TWRP...</string>
 		<string name="inject_twrp_complete">TWRP Injection Complete</string>
-		<string name="swipe_to_confirm">Swipe to Confirm</string>
+		<string name="swipe_to_confirm">밀어서 확인</string>
 		<string name="part_sd_hdr">SD 카드 분할</string>
 		<string name="invalid_partsd_sel">이동식 저장소를 선택하세요.</string>
 		<string name="part_sd_lose">SD 카드의 모든 파일을 삭제 합니다!</string>
@@ -432,15 +434,15 @@
 		<string name="fm_sel_dest">대상 폴더를 선택하세요.</string>
 		<string name="fm_sel_curr_folder">최근 폴더 선택</string>
 		<string name="fm_rename_hdr">이름 변경</string>
-		<string name="fm_set_perms_hdr">퍼미션 적용</string>
-		<string name="fm_perms">퍼미션:</string>
+		<string name="fm_set_perms_hdr">권한 적용</string>
+		<string name="fm_perms">권한:</string>
 		<string name="fm_complete">파일 작업 완료</string>
 		<string name="decrypt_data_hdr">데이터 복호화</string>
 		<string name="decrypt_data_enter_pass">비밀번호를 입력하세요.</string>
 		<string name="decrypt_data_failed">비밀번호가 맞지 않습니다, 다시 시도해 주세요!</string>
 		<string name="decrypt_data_failed_pattern">패턴이 맞지 않습니다, 다시 시도해 주세요!</string>
 		<string name="decrypt_data_enter_pattern">패턴을 입력하세요.</string>
-		<string name="decrypt_data_trying">복호화 시도중</string>
+		<string name="decrypt_data_trying">복호화 시도중...</string>
 		<string name="term_hdr">터미널 명령어</string>
 		<string name="term_s_hdr">터미널</string>
 		<string name="term_kill_btn">KILL</string>
@@ -466,10 +468,10 @@
 		<string name="su_note1">사용자의 디바이스가 루팅 되어 있지 않습니다.</string>
 		<string name="su_note2">지금 SuperSU를 설치하시겠습니까?</string>
 		<string name="su_note3">이 작업은 사용자의 디바이스를 루팅시킵니다.</string>
-		<string name="su_cancel">설치 안함</string>
+		<string name="su_cancel">지금은 설치하지 않음</string>
 		<string name="swipe_su_to_install">밀어서 설치</string>
 		<string name="swipe_su_install">   설치</string>
-		<string name="su_installing">SuperSU 설치중</string>
+		<string name="su_installing">SuperSU 설치중...</string>
 		<string name="sel_storage_list">저장소 선택</string>
 		<string name="ok_btn">확인</string>
 
@@ -594,15 +596,15 @@
 		<string name="set_restore_opt">복원 옵션 설정: '{1}':</string>
 		<string name="md5_check_skip">MD5 확인 건너뛰기가 켜져 있습니다</string>
 		<string name="ors_encrypt_restore_err">OpenRecoveryScript를 사용하여 암호화된 백업을 복원할 수 없습니다.</string>
-		<string name="mounting">마운트중</string>
-		<string name="unmounting">언마운트중</string>
+		<string name="mounting">마운트중...</string>
+		<string name="unmounting">마운트 해제중...</string>
 		<string name="mounted">'{1}' 마운트됨</string>
-		<string name="unmounted">'{1}' 언마운트됨</string>
-		<string name="setting">'{1}'을 '{2}'로 설정 중</string>
-		<string name="setting_empty">'{1}'을 공백으로 설정 중</string>
-		<string name="making_dir1">디렉토리 생성중</string>
+		<string name="unmounted">'{1}' 마운트 해제됨</string>
+		<string name="setting">'{1}'을 '{2}'로 설정 중...</string>
+		<string name="setting_empty">'{1}'을 공백으로 설정 중...</string>
+		<string name="making_dir1">디렉토리 생성중...</string>
 		<string name="making_dir2">디렉토리 생성중: '{1}'</string>
-		<string name="running_command">커맨드 작동중</string>
+		<string name="running_command">커맨드 작동중...</string>
 		<string name="sideload">ADB Sideload</string>
 		<string name="start_sideload">ADB sideload를 시작합니다...</string>
 		<string name="need_new_adb">sideload를 사용하기 위해선 adb 1.0.32 혹은 그 이상의 버전이 필요합니다.</string>
@@ -615,8 +617,8 @@
 		<string name="compression_on">압축이 켜져 있음</string>
 		<string name="md5_off">MD5 생성이 꺼져 있음</string>
 		<string name="backup_fail">백업 실패</string>
-		<string name="backup_clean">백업을 실패하였습니다. 백업 폴더를 지웁니다.</string>
-		<string name="running_recovery_commands">리커버리 커맨드 작동중</string>
+		<string name="backup_clean">백업에 실패하였습니다. 백업이 진행중이었던 제거합니다.</string>
+		<string name="running_recovery_commands">리커버리 커맨드 작동중...</string>
 		<string name="recovery_commands_complete">리커버리 커맨드 완료</string>
 		<string name="running_ors">OpenRecoveryScript 작동중</string>
 		<string name="ors_complete">OpenRecoveryScript 완료</string>
