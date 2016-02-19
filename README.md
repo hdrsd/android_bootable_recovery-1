@@ -12,6 +12,7 @@ Contributor
 * [Fe](http://github.com/myjang0507)
 * [KitaKami](http://github.com/kitakami)
 * [JustAkan](http://github.com/JustAkan)
+* [Sica](http://github.com/sumi0360)
 
 How to enable build korean language?
 ------------------------------------
